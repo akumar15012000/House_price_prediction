@@ -1,0 +1,53 @@
+
+body{
+    background-color: black;
+    color: aliceblue;
+}
+.main{
+    text-align: center; 
+    
+    margin-left: 18%;
+    margin-right: 18%;
+    border-radius: 5px;
+    
+    padding-bottom: 50px;
+    height: 600px;
+
+}
+
+.heading{
+    margin-top: 20px; 
+    padding: 10px;
+    padding-top: 50px;
+    
+}
+
+select{
+    width: 200px;
+    text-align: center;
+    outline: none;
+    border: 5px;
+   
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+}
+legend{
+    
+    font-size: 20px;
+}
+
+input{
+    border-radius: 5px;
+    border-style: none;
+    width: 205px;
+    text-align: center;
+}
+
+input:focus{
+    border-style: none;
+    outline: none;
+}
+button{
+    margin: 30px;
+}
