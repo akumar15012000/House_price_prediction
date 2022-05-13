@@ -9,7 +9,7 @@ columns=None
 
 def load_location():
 
-    with open("model\\column.json",'r') as f:
+    with open("column.json",'r') as f:
         global locations
         global columns
         columns=json.load(f)['data_columns']
@@ -20,7 +20,7 @@ def load_location():
 
 def load_model():
 
-    with open('model\\bangalorea_house_prices.pickle','rb') as f:
+    with open('bangalorea_house_prices.pickle','rb') as f:
         global model
         model=pickle.load(f)
 
