@@ -9,7 +9,7 @@ columns=None
 
 def load_location():
 
-    with open("model\column.json",'r') as f:
+    with open("model\\column.json",'r') as f:
         global locations
         global columns
         columns=json.load(f)['data_columns']
