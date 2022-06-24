@@ -1,6 +1,5 @@
 import pickle
 import json
-from pyexpat import model
 import numpy as np
 
 locations=None

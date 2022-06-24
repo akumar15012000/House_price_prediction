@@ -1,8 +1,3 @@
-
-
-
-
-from unicodedata import name
 from flask import Flask,redirect,url_for,render_template,request
 import util
 
@@ -22,7 +17,7 @@ app=Flask(__name__)
 def fun():
     location=util.load_location()
     
-    return render_template('index.html',loc=location,pred=0)
+    return render_template('index.html',locations=location,pred=0)
 
 
 
@@ -37,7 +32,8 @@ def submit():
         area=float(res['area'])
         predicted_val=util.predict_price(loc,bhk,area,bath)
         locations=util.load_location()
-        return render_template('index.html',loc=locations,pred=predicted_val)
+        return render_template('index.html',locations=locations,pred=predicted_val,bath=bath,bhk=bhk,
+        area=area,loc=str(loc))
 
 
 
