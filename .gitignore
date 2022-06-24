@@ -1,5 +1,4 @@
 Procfile
-requirements.txt
 column.json
 bangalorea_house_prices.pickle
 __pycache__
